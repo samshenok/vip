@@ -1,64 +1,90 @@
 <!doctype html>
 <html lang="zh-cn">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>
-           VIP视频解析 
-        </title>
-        <link href="css/min.css" rel="stylesheet">      
-        <script type="text/javascript">
-            function startplay() {
-                var sourceurl = document.getElementById("url").value;
-                var portalurl = document.getElementById("portal");
-                var portal = document.getElementById("portal").selectedIndex;
-                var portalv = portalurl.options[portal].value;
-                // var cljurl = document.getElementById("player");
-                window.open(portalv + sourceurl, "_blank")
-            }
-        </script>
-        <style type="text/css">
-            body{background:#000}.btn-block:hover{background:#286090;border-color:#286090;color#fff;}
-        </style>
-    </head>
-    <body>
-        <div class="col-xs-12 col-sm-10 col-md-8 col-lg-7 center-block" style="float: none;">
-            <h3 class="text-muted" align="center" style="margin: 50px auto;">
-               视频解析 </h3>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        VIP视频解析
+    </title>
+    <link href="css/min.css" rel="stylesheet">
+    <script type="text/javascript">
+        function startplay() {
+            var sourceurl = document.getElementById("url").value;
+            var portalurl = document.getElementById("portal");
+            var portal = document.getElementById("portal").selectedIndex;
+            var portalv = portalurl.options[portal].value;
+            // var cljurl = document.getElementById("player");
+            window.open(portalv + sourceurl, "_blank")
+        }
+    </script>
+    <style type="text/css">
+        body {
+            background: #000
+        }
+
+        .btn-block:hover {
+            background: #286090;
+            border-color: #286090;
+            color#fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="col-xs-12 col-sm-10 col-md-8 col-lg-7 center-block" style="float: none;">
+        <h3 class="text-muted" align="center" style="margin: 50px auto;">
+            视频解析 </h3>
+        <div class="col-md-14 column">
             <div class="col-md-14 column">
-                <div class="col-md-14 column">
-                    <form method="get" id="1233911832">
-                    </form>
-                    <div class="input-group" style="width: 100%;">
-                        <span class="input-group-addon input-lg" style="width: 80px; ">
-                            选择接口
-                        </span>
-                        <select class="form-control input-lg" id="portal">                           
-                            <option value="https://www.ckplayer.vip/jiexi/?url=" selected="">【线路4】</option>
-                            <option value="https://www.pangujiexi.cc/jiexi.php?url=" selected="">【线路3】</option>
-                            <option value="https://8090.la/api/?url=" selected="">【线路2】</option>
-                            <option value="https://91jxs.com/jiexi/?url=" selected="">【线路1】</option>
-                            <option value="https://api.jiexi.la/?url=" selected="">【高速稳定】</option>
-                        </select>
-                    </div>
-                    <br>
-                    <div class="input-group" style="width: 100%;">
-                        <span class="input-group-addon input-lg" style="width: 80px;">
-                            视频地址
-                        </span>
-                        <input class="form-control input-lg" type="search" placeholder="输入视频地址"
-                        id="url" onkeydown="javascript:if(event.keyCode==13)startplay();">
-                    </div>
-                    <br>
-                    <div>
-                        <button id="bf" type="button" class="btn btn-success btn-lg btn-block"
-                        onclick="startplay()">
-                            开启播放
-                        </button>
-                    </div>
+                <form method="get" id="1233911832">
+                </form>
+                <div class="input-group" style="width: 100%;">
+                    <span class="input-group-addon input-lg" style="width: 80px; ">
+                        选择接口
+                    </span>
+                    <select class="form-control input-lg" id="portal">
+                        <option value="//api.jiexi.la/?url=">vip无广告解析地址【通用】</option>
+                        <option value="//www.ckmov.vip/api.php?url=">优先vip解析引擎系统【全网解析】</option>
+                        <option value="//jx.youyitv.com/?url=">vip极解析【记忆播放】</option>
+                        <option value="//www.1717yun.com/jx/ty.php?url=">测试解析【全网解析】</option>
+                        <option value="//jiexi.8old.cn/m3u8tv20210705%60/?url=">广告超速解析【通用】</option>
+                        <option value="//z1.m1907.cn/?jx=" selected>影片名搜索播放【全网vip解析】</option>
+                        <option value="//www.administratorw.com/index/qqvod.php?url=">vip新路线解析【全网解析】</option>
+                        <option value="//jx.mmkv.cn/tv.php?url=">vip新路线解析二【全网解析】</option>
+                        <option value="//jiexi.t7g.cn/?url=">vip新路线解析三【全网解析】</option>
+                        <option value="//www.xymav.com/?url=">vip新路线解析四【全网解析】</option>
+                        <option value="//jx.mw0.cc/?url=">vip新路线解析五【全网解析】</option>
+                        <option value="https://okjx.cc/?url=">OKJX 有广告</option>
+                        <option value="https://jiexi.t7g.cn/?url=">爱解析无广告</option>
+                        <option value="https://qimihe.com/?url=">qimihe 有广告</option>
+                        <option value="https://www.1717yun.com/jx/ty.php?url=">1717yun 有广告</option>
+                        <option value="https://17kyun.com/api.php?url=" selected="">17kyun 无广告</option>
+                        <option value="https://z1.m1907.cn/?jx=">m1907 速度慢</option>
+                        <option value="https://www.ckplayer.vip/jiexi/?url=" selected="">【线路4】</option>
+                        <option value="https://www.pangujiexi.cc/jiexi.php?url=" selected="">【线路3】</option>
+                        <option value="https://8090.la/api/?url=" selected="">【线路2】</option>
+                        <option value="https://91jxs.com/jiexi/?url=" selected="">【线路1】</option>
+                        <option value="https://api.jiexi.la/?url=" selected="">【高速稳定】</option>
+                    </select>
+                </div>
+                <br>
+                <div class="input-group" style="width: 100%;">
+                    <span class="input-group-addon input-lg" style="width: 80px;">
+                        视频地址
+                    </span>
+                    <input class="form-control input-lg" type="search" placeholder="输入视频地址" id="url"
+                        onkeydown="javascript:if(event.keyCode==13)startplay();">
+                </div>
+                <br>
+                <div>
+                    <button id="bf" type="button" class="btn btn-success btn-lg btn-block" onclick="startplay()">
+                        开启播放
+                    </button>
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+</body>
 
 </html>
